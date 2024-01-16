@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Game_Console_app
-build_property.ProjectDir = C:\Users\hugge\OneDrive\Mjukvaruutveckling\Kod\Egna projekt\C#\Game_Console_app\Game_Console_app\
+build_property.ProjectDir = C:\Users\hugge\OneDrive\Mjukvaruutveckling\Kod\Egna projekt\C#\Command-Games-C-\Game_Console_app\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
