@@ -38,6 +38,7 @@ namespace Game_Console_app
                 if (cmd[0] == "quit") break;
                 else if (cmd[0] == "start")
                 {
+                    TicTacToe.StartTicTacToe();
                     if (cmd[1] == "tic") TicTacToe.StartTicTacToe();
                     else if (cmd[1] == "hangman") Console.WriteLine("Hangman    NYI");
                     else if (cmd[1] == "Yatzee") Console.WriteLine("Yatzee      NYI");

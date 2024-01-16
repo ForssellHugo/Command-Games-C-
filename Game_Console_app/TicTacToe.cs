@@ -8,6 +8,13 @@ namespace Game_Console_app
 {
     internal class TicTacToe
     {
+        public static void PrintWinLoss(int oWins, int xWins, int ties)
+        {
+            Console.WriteLine("________________________________");
+            Console.WriteLine("|Wins O:     Ties:        Wins X:|");
+            Console.WriteLine($"|    {oWins}      {ties}            {xWins}         |");
+            Console.WriteLine("|________________________________|");
+        }
         static void TicHelp()
         {
             Console.WriteLine("Avalible comands:");
@@ -25,7 +32,6 @@ namespace Game_Console_app
             string comand;
             Console.WriteLine("Welcome to Tic-Tac-Toe!");
             Console.WriteLine("Type 'start' to start the game, or 'rules' to list the rules, Good luck! ");
-
             do
             {
                 Console.Write("> ");
@@ -53,8 +59,36 @@ namespace Game_Console_app
         }
         public static void TicStartGame()
         {
+            int i = 1;
+            int oWins = 0; 
+            int xWins = 0; 
+            int ties = 0;
+            Console.WriteLine("The playfield is a number between 1-9, type the number on the spot you want to place your game tile ");
+            PrintWinLoss(5, 3, 11);
+            do
+            {
+                if (i % 2 == 0)
+                {
+                    Console.Write("Player X: ");
+                    Console.ReadLine();
+                    i++;
+                }
+                else if (i % 2 == 1)
+                {
+                    Console.Write("Player O: ");
+                    Console.ReadLine();
+                    i--;
+                }
+
+
+
+
+            }
+            while(true || i < 10);
+
 
 
         }
+
     }
 }
